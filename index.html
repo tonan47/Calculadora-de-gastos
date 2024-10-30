@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gastos Diarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Gastos</h1>
+        <!-- Formulario para agregar/editar gasto -->
+        <input type="text" id="expense-name" placeholder="Nombre del gasto">
+        <input type="number" id="expense-amount" placeholder="Monto del gasto">
+        <button onclick="addOrUpdateExpense()">Guardar Gasto</button>
+        
+        <!-- Lista de gastos ingresados -->
+        <ul id="expense-list" class="expense-list"></ul>
+        
+        <!-- Total de gastos -->
+        <p class="total">Total: $<span id="total-amount">0</span></p>
+
+        <!-- Botón para descargar el archivo de gastos -->
+        <button onclick="downloadExpenses()">Descargar Gastos</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
